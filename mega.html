@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url('images.jpg') no-repeat center center/ cover;
+            height: 100vh;
+            font-family: Arial, Helvetica;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .container{
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 10px;
+            overflow: auto;
+            border: 2px white;
+        }
+        
+        /* Navigation */
+        .top-header {
+            background-color: #333;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .school-logo {
+            max-width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #999;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header nav ul {
+            list-style: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        header nav ul li a:hover {
+            color: lightgray;
+        }
+
+        h1.intro {
+            text-align: center;
+            color: black;
+            font-size: 45px;
+            margin: 40px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            background-color: rgba(11, 83, 98, .6);
+            padding: 10px;
+            padding-top: 30px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        form label {
+            display: block;
+            color: #999;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="number"],
+        form input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+         
+        form input[type="submit"] {
+            display: block;
+            margin: 15px auto;
+            width: 50%;
+            padding: 10px 12px;
+            border: none;
+            border-radius: 8px;
+            color: #999;
+            text-align: center;
+            font-size: 16px;
+        } 
+
+        form input[type="submit"]:hover {
+            background-color: #999;
+            color: rgb(11, 70, 80);
+            font-weight: bold;
+            opacity: .7;
+        } 
+
+        #login-link {
+            color: blue; /* Set the color value you desire, such as blue */
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Header with School Logo -->
+    <div class="top-header">
+        <img src="download.jpg" alt="School Logo" class="school-logo">
+        <h1>School Name</h1>
+    </div>
+
+    <!-- Existing Header -->
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolios</a></li>
+                <li><a href="#">Policies and Constitutions</a></li>
+                <li><a href="#">Documents and Policies</a></li>
+            </ul>       
+        </nav> 
+    </header>
+
+    <section>
+        <h1 class="intro">Please Fill out the form</h1>
+        <form>
+            <div>
+                <label>First Name</label>
+                <input type="text" name="First-Name">
+            </div>
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="Last-Name">
+            </div>
+            
+            <div>
+                <label>StudentID #</label>
+                <input type="number" name="Last-Name">
+            </div>
+
+            <div>
+                <label>Email</label>
+                <input type="email" name="Email">
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" name="Password">
+            </div>  
+            <div>
+                <label>Confirm Password</label>
+                <input type="password" name="Confirm-Password">
+            </div>
+            <input type="submit" name="Submit">               
+        </form>
+        <p>Already have an account? <a href="login.html" id="login-link">Login</a></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

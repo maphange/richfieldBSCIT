@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Register</title>
+	<style>
+		* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+		}
+
+		body {
+			background: url('./pexels-photo-7713509.webp') no-repeat center center/ cover;
+			height: 100vh;
+			font-family: Arial, Helvetica;
+		}
+		a {
+			text-decoration: none;
+			color: black;
+
+		}
+
+        .container{
+        	max-width: 1200px;
+        	margin: auto;
+        	padding: 0 10px;
+        	overflow: auto;
+        	border: 2px white;
+        }
+        
+        /*Navigation*/
+       
+
+        header nav h1 {
+        	float: left;
+        	padding: 10px;
+        }
+
+        header nav ul {
+        	float: right;
+        }
+
+        header nav ul li {
+        	display: inline;
+
+        }
+
+		
+		.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(11, 83, 98, .6);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Navigation */
+.top-header {
+            background-color: #333;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .school-logo {
+            max-width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+
+        header nav ul li a:hover {
+        	color: #444 ;
+        	background-color: lightgray ;
+        }
+
+        h1.intro {
+        	text-align: center;
+        	color: black;
+        	font-size: 45px;
+        	margin: 40px;
+        }
+
+        form {
+        	max-width: 400px;
+        	margin:auto;
+        	background-color: rgba(11, 83, 98, .6);
+        	padding: 10px;
+        	padding-top: 30px;
+        	margin-top: 20px;
+        	border-radius: 10px;
+
+        }
+
+        form label {
+        	display: block;
+        	color: #999;
+        	margin-bottom: 10px;
+        	font-size: 18px;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+		form input[type="number"],
+        form input[type="password"] {
+        	width: 100%;
+        	padding: 12px;
+        	margin-bottom: 15px;
+        	border: none;
+        	border-radius: 5px;
+        	font-size: 16px;
+        }
+         
+        form input[type="submit"] {
+        	display: block;
+        	margin: 15px auto;
+        	width: 50%;
+        	padding: 10px 12px;
+        	border: none;
+        	border-radius: 8px;
+        	color: #999;
+        	text-align: center;
+        	font-size: 16px;
+
+        } 
+
+        form input[type="submit"]:hover {
+        	background-color: #999;
+        	color: rgb(11, 70, 80);
+        	font-weight: bold;
+        	opacity: .7;
+        } 
+
+		#login-link {
+  color: blue; /* Set the color value you desire, such as blue */
+}
+
+
+	</style>
+</head>
+<body>
+
+	<!-- Top Header with School Logo -->
+    <div class="top-header">
+        <img src="rich.png" alt="School Logo" class="school-logo">
+        
+    </div>
+
+    <header>
+    	<nav class="container navbar">
+    	<h1 class="logo"><a href="#">Student Representative Council</a></h1>
+    	<ul class="nav">
+    		<li><a href="#">Home</a></li>
+    		
+    		<li><a href="#"> Portfolios</a></li>
+			<li><a href="#"> Policies and Constitutions </a></li>
+			<div class="dropdown">
+				<button class="dropbtn">Documents and Policies
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+				  <a href="minutes.html">Minutes</a>
+				  <a href="reports.html">Reports</a>
+				  <a href="policies.html">Policies and Constitutions </a>
+				</div>
+			  </div> 
+			</div>
+    	</ul>		
+    	</nav>	
+    </header>
+    <section>
+    	<h1 class="intro">Please Fill out the form</h1>
+    	<form>
+    		<div>
+    			<label>First Name</label>
+    			<input type="text" name="First-Name">
+    		</div>
+    		<div>
+    			<label>Last Name</label>
+    			<input type="text" name="Last-Name">
+    		</div>
+			
+			<div>
+    			<label>StudentID #</label>
+    			<input type="number" name="Last-Name">
+    		</div>
+
+    		<div>
+    			<label>Email</label>
+    			<input type="email" name="Email">
+    		</div>
+    		<div>
+    			<label>Password</label>
+    			<input type="password" name="Password">
+    		</div>	
+    		<div>
+    			<label>Confirm Password</label>
+    			<input type="password" name="Confirm-Password">
+    		</div>
+    		<input type="submit" name="Submit">    			
+    	</form>
+		<p>Already have an account? <a href="login.html" id="login-link">Login</a></p>
+
+      
+
+
+    </section>
+	<script src="script.js"></script>
+    </body>
+    </html>
